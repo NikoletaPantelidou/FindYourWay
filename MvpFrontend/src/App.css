@@ -1,0 +1,25 @@
+.cities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+  margin: 0% 20%;
+}
+@media (max-width: 900px) {
+  .cities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .cities {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.city-image {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+}
