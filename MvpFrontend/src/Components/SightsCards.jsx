@@ -1,5 +1,4 @@
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 export default function SightsCards({ sight }) {
   return (
     <Card style={{ width: "18rem" }}>
@@ -10,7 +9,6 @@ export default function SightsCards({ sight }) {
           <div>Description: {sight.description}</div>
           <div>Price: {sight.price}</div>
         </Card.Text>
-        <Button variant="primary">Details</Button>
       </Card.Body>
     </Card>
   );
