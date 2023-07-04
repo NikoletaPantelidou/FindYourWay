@@ -7,7 +7,7 @@ const CityDetails = ({ match }) => {
 
   return (
     <div>
-      <p>City ID: {id}</p>
+      <div>City ID: {id}</div>
       <SightsCards></SightsCards>
     </div>
   );

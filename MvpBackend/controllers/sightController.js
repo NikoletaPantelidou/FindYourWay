@@ -4,8 +4,8 @@ var getAllSights = async (req, res) => {
   try {
     const sight = await SightModel.find();
     res.json(sight);
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    res.status(500).json({ error: `${error}` });
   }
 };
 
@@ -22,11 +22,21 @@ var postSight = async (req, res) => {
     const savedSight = await sight.save();
     res.status(201).json(savedSight);
   } catch (error) {
-    res.status(500).json({ error: "Failed to create a new sight" });
+    res.status(500).json({ error: `${error}` });
+  }
+};
+
+var getSightByCity = async (req, res) => {
+  try {
+    const sight = await SightModel.find({ city: req.params.city });
+    res.json(sight);
+  } catch (error) {
+    res.status(500).json({ error: `${error}` });
   }
 };
 
 module.exports = {
   getAllSights,
   postSight,
+  getSightByCity,
 };

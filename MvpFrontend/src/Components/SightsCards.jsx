@@ -7,8 +7,8 @@ export default function SightsCards({ sight }) {
       <Card.Body>
         <Card.Title>{sight.name}</Card.Title>
         <Card.Text>
-          <p>Description: {sight.description}</p>
-          <p>Price: {sight.price}</p>
+          <div>Description: {sight.description}</div>
+          <div>Price: {sight.price}</div>
         </Card.Text>
         <Button variant="primary">Details</Button>
       </Card.Body>

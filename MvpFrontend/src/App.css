@@ -5,7 +5,12 @@
   gap: 10px;
   justify-content: center;
   margin: 0% 20%;
+  margin-top: 40px;
 }
+a {
+  color: whitesmoke !important;
+}
+
 @media (max-width: 900px) {
   .cities {
     grid-template-columns: repeat(2, 1fr);
@@ -22,4 +27,21 @@
   width: 100px;
   height: 150px;
   object-fit: cover;
+}
+
+.sights {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 95px;
+  flex-wrap: wrap;
+}
+.footer {
+  background-color: #0d6efd;
+  color: whitesmoke;
+  margin-top: 40px;
+}
+.bottom {
+  background-color: #0d6efd;
+  text-align-last: center;
 }
